@@ -14,9 +14,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text);
   background-color: var(--main-background);
-  margin: 0;
 }
-
+.container{
+  width: 1128px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .list {
   list-style: none;
   margin: 0;
@@ -39,6 +44,9 @@ body {
 }
 
 /*header*/
+.header{
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .logo {
   font-family: 'Raleway';
   font-weight: 800;
@@ -78,21 +86,24 @@ body {
 /*hero*/
 .hero {
   background-color: var(--background-dark);
-  height: 603px;
-  padding-top: 192px;
+  /* height: 603px; */
+  padding: 192px;
+    text-align: center;
 }
 .hero-title {
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
   color: var(--ligth-text);
-  text-align: center;
   width: 492px;
   margin-bottom: 48px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .hero-button {
-  width: 170px;
-  height: 51px;
+  min-width: 170px;
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -102,7 +113,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   cursor: pointer;
-  margin-bottom: 192px;
+  padding: 16px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -114,7 +125,8 @@ body {
 
 /*section common*/
 .section {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-subtitle {
   font-weight: 600;
@@ -122,10 +134,12 @@ body {
   line-height: 1.2;
   color: var(--title-text);
   margin-bottom: 8px;
+  margin-top: 0;
 }
 .section-text {
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
 }
 .section-title {
   font-weight: 600;
@@ -136,24 +150,30 @@ body {
   text-transform: capitalize;
   color: var(--title-text);
   margin-bottom: 72px;
+  margin-top: 0;
 }
-
+/* features */
+.features{
+  padding-bottom: 0;
+}
 /*team*/
 .team {
   background-color: var(--background-light);
-  padding-top: 120px;
 }
 .team-item{
   background-color: var(--main-background);
   width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
+}
+.card-img{
+  margin-bottom: 32px;
 }
 
 /*footer*/
 .footer {
   background-color: var(--background-dark);
-  padding: 100px 0px 100px 156px;
 }
 .footer-logo{
   color: var(--ligth-text);
@@ -161,14 +181,24 @@ border-radius: 0px 0px 4px 4px;
 .footer-text {
   color: var(--footer-text);
   width: 264px;
+  margin: 0;
 }
 
 /*portfolio*/
 .gallery {
-  margin-bottom: 120px;
-  margin-top: 96px;
+  padding-bottom: 120px;
+  padding-top: 96px;
+}
+.gallery-item{
+  width: 360px;
+  border-bottom: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding-bottom: 32px;
 }
 
+.filter-list{
+  margin-bottom: 72px;
+}
 .filter-button {
   font-weight: 600;
   font-size: 16px;
@@ -178,7 +208,7 @@ border-radius: 0px 0px 4px 4px;
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  height: 48px;
+  min-width: 69px;
   background: var(--filter-button-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
